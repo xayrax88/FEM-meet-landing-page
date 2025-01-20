@@ -1,0 +1,49 @@
+:root {
+  --white-50-opacity: rgba(255, 255, 255, 0.5);
+
+  --White: hsl(0, 0%, 100%);
+  --Attribution-color: hsl(228, 45%, 44%);
+
+  /* --fw-200: 200;  */
+  /*extra light*/
+  /* --fw-400: 400;  */
+  /*normal*/
+
+  --fw-500: 500;
+  --fw-600: 600; /*semi-bold*/
+
+  --size-11px: 11px;
+  --size-13px: 13px;
+  --size-18px: 18px;
+  --size-20px: 20px;
+  --size-28px: 28px;
+}
+
+/* General & Global styling */
+
+footer {
+  color: var(--White);
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.attribution {
+  font-size: var(--size-11px);
+  text-align: center;
+}
+.attribution a {
+  color: var(--Attribution-color);
+}
+
+/* Responsive  Media queries */
+/* Mobile size  */
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+}
+/* Tablet size */
+/* @media only screen and (max-width: 768px) and (max-height: 1024px) { 
+  
+} */
+/* Desktop size */
+/* @media only screen and (max-width: 1440px) and (max-height: 900px) { 
+  
+} */
