@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
+
 :root {
   --white-50-opacity: rgba(255, 255, 255, 0.5);
+  --cyan-600: hsl(192, 37%, 48%);
+  --cyan-300: hsl(192, 90%, 77%);
+  --purple-600: hsl(268, 34%, 53%);
+  --purple-300: hsl(268, 100%, 86%);
+  --slate-900: hsl(240, 21%, 20%);
+  --slate-600: hsl(240, 10%, 57%);
+  --slate-300: hsl(240, 18%, 85%);
+  --white-002: hsl(0, 0%, 98%);
 
   --White: hsl(0, 0%, 100%);
   --Attribution-color: hsl(228, 45%, 44%);
@@ -12,15 +22,41 @@
   --fw-500: 500;
   --fw-600: 600; /*semi-bold*/
 
-  --size-11px: 11px;
-  --size-13px: 13px;
-  --size-18px: 18px;
-  --size-20px: 20px;
-  --size-28px: 28px;
+  --space-size-112px: 112px; /*1400*/
+  --space-size-80px: 80px; /*1000*/
+  --space-size-70px: 70px; /*900*/
+  --space-size-64px: 64px; /*800*/
+  --space-size-56px: 56px; /*700*/
+  --space-size-40px: 40px; /*500*/
+  --space-size-32px: 32px; /*400*/
+  --space-size-24px: 24px; /*300*/
+  --space-size-16px: 16px; /*200*/
+  --space-size-8px: 8px; /*100*/
+  --space-size-4px: 4px; /*50*/
+
+  --txt-size-64px: 64px; /*Txt Preset 1 - line-height: 110%, letter spacing: 0px*/
+  --txt-size-40px: 40px; /*Txt Preset 2 - line-height: 110%, letter spacing: 0px*/
+  --txt-size-16px: 16px; /*Txt Preset 3 - line-height: 110%, letter spacing: 4px*/
+  --txt-size-18px: 18px; /*Txt Preset 4 - line-height: 110%, letter spacing: 0px*/
+  --txt-size-16px: 16px; /*Txt Preset 5 - line-height: 150%, letter spacing: 0px*/
 }
 
 /* General & Global styling */
-
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", serif;
+  background: var(--Light-grayish-blue);
+  /* color: var(--Very-Dark-Blue);  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0;
+}
 footer {
   color: var(--White);
   position: relative;
@@ -38,6 +74,10 @@ footer {
 /* Responsive  Media queries */
 /* Mobile size  */
 @media only screen and (max-width: 390px) and (max-height: 844px) {
+  svg {
+    height: 28px;
+    width: 118px;
+  }
 }
 /* Tablet size */
 /* @media only screen and (max-width: 768px) and (max-height: 1024px) { 
