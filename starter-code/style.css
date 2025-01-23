@@ -1,5 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
-
 :root {
   --white-50-opacity: rgba(255, 255, 255, 0.5);
   --cyan-600: hsl(192, 37%, 48%);
@@ -38,7 +38,7 @@
   --txt-size-40px: 40px; /*Txt Preset 2 - line-height: 110%, letter spacing: 0px*/
   --txt-size-16px: 16px; /*Txt Preset 3 - line-height: 110%, letter spacing: 4px*/
   --txt-size-18px: 18px; /*Txt Preset 4 - line-height: 110%, letter spacing: 0px*/
-  --txt-size-16px: 16px; /*Txt Preset 5 - line-height: 150%, letter spacing: 0px*/
+  /*--txt-size-16px: 16px;*/ /*Txt Preset 5 - line-height: 150%, letter spacing: 0px*/
 }
 
 /* General & Global styling */
@@ -74,30 +74,8 @@ footer {
 /* Responsive  Media queries */
 /* Mobile size  */
 @media only screen and (max-width: 390px) and (max-height: 844px) {
-  /* .container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black; 
-}
+  /* Background Stripes */
 
-
-.strip {
-  position: absolute;
-  height: 100%; 
-  width: 20%; 
-  background-color: hsl(0, 0, 95%);
-  top: 0;
-}
-
-
-.light-strip:nth-child(odd) {
-  width: 10%; 
-}
-   */
   main {
     display: flex;
     flex-direction: column;
@@ -117,7 +95,7 @@ footer {
   svg {
     height: 28px;
     width: 118px;
-    margin: 2em 0em;
+    margin: 0.5em;
   }
   h1 {
     color: var(--slate-900);
@@ -128,17 +106,19 @@ footer {
     color: var(--slate-600);
     font-size: var(--txt-size-16px);
     line-height: 150%;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
   }
+
   .section-00 {
     height: 715px;
+    margin-bottom: 3rem;
   }
   .hero {
     width: 375px;
     margin: 25px 0px;
     display: block;
   }
-  .btn-00 {
+  .btn {
     width: 193px;
     height: 56px;
     border-radius: 3rem;
@@ -148,9 +128,108 @@ footer {
     font-size: var(--txt-size-16px);
     line-height: 150%;
     font-weight: var(--fw-600);
+    margin-bottom: 2rem;
   }
   section button span {
     color: var(--cyan-300);
+  }
+  .btn-2 {
+    width: 161px;
+    height: 56px;
+    border-radius: 3rem;
+    border-style: none;
+    background: var(--purple-600);
+    color: var(--White);
+    font-size: var(--txt-size-16px);
+    line-height: 150%;
+    font-weight: var(--fw-600);
+    margin-bottom: 5rem;
+  }
+  .section-01 {
+    height: 915px;
+    width: 375px;
+    position: relative;
+    padding: 2rem 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .verticalLine,
+  .verticalLine-2 {
+    border-left: solid 2px var(--slate-300);
+    height: 80px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .circle,
+  .circle-2 {
+    height: 56px;
+    width: 56px;
+    border: solid 2px var(--slate-300);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--White);
+    z-index: 1;
+  }
+  .circle span,
+  .circle-2 span {
+    font-size: 1rem;
+    font-weight: var(--fw-600);
+    /* position: relative;
+    z-index: 1;  */
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: 147.5px 147.5px;
+    grid-template-rows: 144px 144px;
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 10rem;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  /* .image-grid .box {
+    width: 147.5px; 
+    height: 144px; 
+    border-radius: 5px;
+    overflow: hidden; 
+    position: relative;
+  } */
+  .box.a,
+  .box.b,
+  .box.c,
+  .box.d {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .a {
+    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat
+      center center;
+  }
+  .b {
+    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat
+      center center;
+  }
+  .c {
+    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center
+      center;
+  }
+  .d {
+    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center
+      center;
   }
 }
 
