@@ -35,6 +35,7 @@
   --space-size-4px: 4px; /*50*/
 
   --txt-size-64px: 64px; /*Txt Preset 1 - line-height: 110%, letter spacing: 0px*/
+  --txt-size-48px: 48px;
   --txt-size-40px: 40px; /*Txt Preset 2 - line-height: 110%, letter spacing: 0px*/
   --txt-size-16px: 16px; /*Txt Preset 3 - line-height: 110%, letter spacing: 4px*/
   --txt-size-18px: 18px; /*Txt Preset 4 - line-height: 110%, letter spacing: 0px*/
@@ -43,8 +44,14 @@
 
 /* General & Global styling */
 * {
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
+/* body, html {
+  width: 100%;
+  overflow-x: hidden; 
+} */
 body {
   font-family: "Outfit", serif;
   background: var(--white-002);
@@ -72,12 +79,230 @@ footer {
 }
 
 /* Responsive  Media queries */
+/* Tablet size */
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1em;
+    width: 100%;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 768px;
+  }
+  svg {
+    display: inline-block;
+    height: 28px;
+    width: 118px;
+    margin: 2em;
+    padding: 0;
+    /* z-index: 10; */
+    position: relative;
+    visibility: visible;
+    /* background-color: transparent; */
+  }
+  h1,
+  h2 {
+    color: var(--slate-900);
+    font-size: var(--txt-size-48px);
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+  }
+
+  section.section-02 div.content h2,
+  section.section-02 div.content p {
+    color: var(--White);
+  }
+  p {
+    color: var(--slate-600);
+    font-size: var(--txt-size-12px);
+    line-height: 110%;
+    letter-spacing: 1px;
+    /* font-weight: var(--fw-500); */
+    /* margin-bottom: 2rem; */
+  }
+  section.section-02 div.content p {
+    margin: 2rem 0rem;
+  }
+  .section-00 {
+    max-width: 768px;
+    margin: 0 auto;
+    /* height: 715px; */
+    position: relative;
+    overflow: visible;
+    z-index: 0;
+    margin-bottom: 3rem;
+  }
+  .hero {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btn {
+    background: var(--cyan-600);
+  }
+  .btn-2 {
+    width: 161px;
+    margin-bottom: 5rem;
+  }
+  .btn,
+  .btn-3 {
+    width: 193px;
+    margin-bottom: 2rem;
+  }
+  .btn-2,
+  .btn-3 {
+    background: var(--purple-600);
+  }
+  .btn,
+  .btn-2,
+  .btn-3 {
+    height: 56px;
+    border-radius: 3rem;
+    color: var(--White);
+    border-style: none;
+    font-size: var(--txt-size-16px);
+    line-height: 150%;
+    font-weight: var(--fw-600);
+  }
+  section button span {
+    color: var(--cyan-300);
+  }
+  .section-01 {
+    height: 915px;
+    width: 375px;
+    position: relative;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
+  }
+  .verticalLine,
+  .verticalLine-2 {
+    border-left: solid 1px var(--slate-300);
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .verticalLine {
+    top: -3rem;
+    z-index: 2;
+  }
+  .verticalLine-2 {
+    top: -7rem;
+    z-index: 1;
+  }
+  .circle,
+  .circle-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: solid 1px var(--slate-300);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: 20px auto; */
+    background: var(--White);
+  }
+  .circle {
+    top: 2rem;
+    z-index: 1;
+  }
+  .circle-2 {
+    top: -2rem;
+    z-index: 11;
+  }
+  .circle span,
+  .circle-2 span {
+    font-size: 1rem;
+    font-weight: var(--fw-600);
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: 147.5px 147.5px;
+    grid-template-rows: 144px 144px;
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 10rem;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .box.a,
+  .box.b,
+  .box.c,
+  .box.d {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .a {
+    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat
+      center center;
+  }
+  .b {
+    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat
+      center center;
+  }
+  .c {
+    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center
+      center;
+  }
+  .d {
+    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center
+      center;
+  }
+  .section-02 {
+    height: 374px;
+    width: 375px;
+    position: relative;
+    overflow: visible;
+  }
+  .section-02 .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/mobile/image-footer.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .section-02 .background-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-300);
+    opacity: 0.4;
+    z-index: 2;
+  }
+  .section-02 .content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: var(--White);
+    padding: 1em;
+  }
+}
 /* Mobile size  */
 @media only screen and (max-width: 390px) and (max-height: 844px) {
- 
-  
-
-   
   main {
     display: flex;
     flex-direction: column;
@@ -97,16 +322,18 @@ footer {
   svg {
     height: 28px;
     width: 118px;
-    margin: .5em;
+    margin: 0.5em;
   }
-  h1, h2 {
+  h1,
+  h2 {
     color: var(--slate-900);
     font-size: var(--txt-size-40px);
     line-height: 110%;
   }
-section.section-02 div.content h2, section.section-02 div.content p{
-  color: var(--White);
-}
+  section.section-02 div.content h2,
+  section.section-02 div.content p {
+    color: var(--White);
+  }
   p {
     color: var(--slate-600);
     font-size: var(--txt-size-12px);
@@ -118,7 +345,6 @@ section.section-02 div.content h2, section.section-02 div.content p{
   section.section-02 div.content p {
     margin: 2rem 0rem;
   }
-
   .section-00 {
     height: 715px;
     margin-bottom: 3rem;
@@ -135,14 +361,18 @@ section.section-02 div.content h2, section.section-02 div.content p{
     width: 161px;
     margin-bottom: 5rem;
   }
-  .btn, .btn-3 {
+  .btn,
+  .btn-3 {
     width: 193px;
     margin-bottom: 2rem;
   }
-    .btn-2, .btn-3 {
+  .btn-2,
+  .btn-3 {
     background: var(--purple-600);
   }
-  .btn, .btn-2, .btn-3 {
+  .btn,
+  .btn-2,
+  .btn-3 {
     height: 56px;
     border-radius: 3rem;
     color: var(--White);
@@ -153,17 +383,17 @@ section.section-02 div.content h2, section.section-02 div.content p{
   }
   section button span {
     color: var(--cyan-300);
-    
   }
   .section-01 {
-    height:915px;
+    height: 915px;
     width: 375px;
     position: relative;
-    padding: 1rem; 
+    padding: 1rem;
     padding-bottom: 2rem;
     margin-bottom: 6rem;
   }
-  .verticalLine, .verticalLine-2 {
+  .verticalLine,
+  .verticalLine-2 {
     border-left: solid 1px var(--slate-300);
     height: 80px;
     position: absolute;
@@ -172,41 +402,40 @@ section.section-02 div.content h2, section.section-02 div.content p{
   }
   .verticalLine {
     top: -3rem;
-    z-index: 2; 
+    z-index: 2;
   }
   .verticalLine-2 {
-  top: -7rem;
-  z-index: 1;
-
-}
-.circle, .circle-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 56px;
-  height: 56px;
-  border: solid 1px var(--slate-300);
-  border-radius: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  /* margin: 20px auto; */
-   background: var(--White);
-}
-
-.circle {
-  top: 2rem;
-  z-index: 1; 
-}
-.circle-2 {
-  top: -2rem;
-  z-index: 11; 
-}
-  .circle span, .circle-2 span {
+    top: -7rem;
+    z-index: 1;
+  }
+  .circle,
+  .circle-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: solid 1px var(--slate-300);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: 20px auto; */
+    background: var(--White);
+  }
+  .circle {
+    top: 2rem;
+    z-index: 1;
+  }
+  .circle-2 {
+    top: -2rem;
+    z-index: 11;
+  }
+  .circle span,
+  .circle-2 span {
     font-size: 1rem;
     font-weight: var(--fw-600);
   }
-
   .image-grid {
     display: grid;
     grid-template-columns: 147.5px 147.5px;
@@ -218,68 +447,68 @@ section.section-02 div.content h2, section.section-02 div.content p{
     position: relative;
     margin-bottom: 5rem;
   }
-
-.box.a, .box.b, .box.c, .box.d {
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  border-radius: 5px;
-}
-.a{
-    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat center center;
+  .box.a,
+  .box.b,
+  .box.c,
+  .box.d {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px;
   }
-.b{
-    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat center center;
+  .a {
+    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat
+      center center;
   }
-.c{
-    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center center;
+  .b {
+    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat
+      center center;
+  }
+  .c {
+    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center
+      center;
   }
   .d {
-    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center center;
+    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center
+      center;
   }
-
   .section-02 {
-    height: 374px; 
-    width: 375px; 
-    position: relative; 
-    overflow: visible; 
+    height: 374px;
+    width: 375px;
+    position: relative;
+    overflow: visible;
   }
   .section-02 .background-overlay {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(./assets/mobile/image-footer.jpg) no-repeat center center;
-    background-size: cover; 
-    z-index: 1; 
-  }
-  .section-02 .background-overlay::before {
-    content: ''; 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--purple-300); 
-    opacity: .4; 
-    z-index: 2; 
+    background: url(./assets/mobile/image-footer.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
   }
-
+  .section-02 .background-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-300);
+    opacity: 0.4;
+    z-index: 2;
+  }
   .section-02 .content {
     position: relative;
-    z-index: 3; 
-    text-align: center; 
-    color: var(--White); 
-    padding: 1em; 
-
+    z-index: 3;
+    text-align: center;
+    color: var(--White);
+    padding: 1em;
+  }
 }
 
-/* Tablet size */
-/* @media only screen and (max-width: 768px) and (max-height: 1024px) { 
-  
-} */
 /* Desktop size */
 /* @media only screen and (max-width: 1440px) and (max-height: 900px) { 
   
