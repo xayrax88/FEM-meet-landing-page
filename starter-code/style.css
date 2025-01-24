@@ -104,14 +104,20 @@ footer {
     font-size: var(--txt-size-40px);
     line-height: 110%;
   }
-
+section.section-02 div.content h2, section.section-02 div.content p{
+  color: var(--White);
+}
   p {
     color: var(--slate-600);
-    font-size: var(--txt-size-16px);
-    line-height: 150%;
+    font-size: var(--txt-size-12px);
+    line-height: 110%;
+    letter-spacing: 1px;
+    /* font-weight: var(--fw-500); */
     /* margin-bottom: 2rem; */
   }
-
+  section.section-02 div.content p {
+    margin: 2rem 0rem;
+  }
 
   .section-00 {
     height: 715px;
@@ -123,40 +129,39 @@ footer {
     display: block;
   }
   .btn {
+    background: var(--cyan-600);
+  }
+  .btn-2 {
+    width: 161px;
+    margin-bottom: 5rem;
+  }
+  .btn, .btn-3 {
     width: 193px;
+    margin-bottom: 2rem;
+  }
+    .btn-2, .btn-3 {
+    background: var(--purple-600);
+  }
+  .btn, .btn-2, .btn-3 {
     height: 56px;
     border-radius: 3rem;
-    border-style: none;
-    background: var(--cyan-600);
     color: var(--White);
+    border-style: none;
     font-size: var(--txt-size-16px);
     line-height: 150%;
     font-weight: var(--fw-600);
-    margin-bottom: 2rem;
   }
   section button span {
     color: var(--cyan-300);
     
   }
-  .btn-2 {
-    width: 161px;
-    height: 56px;
-    border-radius: 3rem;
-    border-style: none;
-    background: var(--purple-600);
-    color: var(--White);
-    font-size: var(--txt-size-16px);
-    line-height: 150%;
-    font-weight: var(--fw-600);
-    margin-bottom: 5rem;
-  }
   .section-01 {
     height:915px;
     width: 375px;
     position: relative;
-    padding: 2rem 1rem; 
-    padding-bottom: 4rem;
-    margin-bottom: 5rem;
+    padding: 1rem; 
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
   }
   .verticalLine, .verticalLine-2 {
     border-left: solid 1px var(--slate-300);
@@ -172,6 +177,7 @@ footer {
   .verticalLine-2 {
   top: -7rem;
   z-index: 1;
+
 }
 .circle, .circle-2 {
   display: flex;
@@ -200,7 +206,6 @@ footer {
     font-size: 1rem;
     font-weight: var(--fw-600);
   }
-
 
   .image-grid {
     display: grid;
@@ -268,7 +273,6 @@ footer {
     text-align: center; 
     color: var(--White); 
     padding: 1em; 
-
 
 }
 
