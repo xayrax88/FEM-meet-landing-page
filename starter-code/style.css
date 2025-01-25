@@ -132,6 +132,11 @@ footer {
     width: 448.3px;
     height: 48px;
   }
+
+  section.section-01 p {
+    height: 72px;
+    width: 504px;
+  }
   section.section-02 div.content h2,
   section.section-02 div.content p {
     color: var(--White);
@@ -141,12 +146,7 @@ footer {
     margin: 2rem 0rem;
   }
   .section-00 {
-    max-width: 768px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 1rem;
-    margin: 0 auto;
     margin-bottom: 10rem;
   }
   .hero {
@@ -154,6 +154,8 @@ footer {
     width: 100%;
     margin: 0 auto;
   }
+
+  /* Buttons */
   .btn-container {
     display: flex;
     gap: 1rem;
@@ -168,7 +170,6 @@ footer {
     /* padding: 0.8rem 2rem;  */
     /* font-size: 16px; */
   }
-
   .btn {
     margin-right: 1rem;
     background: var(--cyan-600);
@@ -203,10 +204,9 @@ footer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -3rem;
+    top: 55rem;
     z-index: 2;
   }
-
   .circle {
     display: flex;
     align-items: center;
@@ -218,14 +218,50 @@ footer {
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
-    /* margin: 20px auto; */
     background: var(--White);
-    top: 55rem;
+    top: 60rem;
     z-index: 1;
   }
   .circle span {
     font-size: 1rem;
     font-weight: var(--fw-600);
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 152px);
+    grid-template-rows: 160px;
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 7rem;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .box.a,
+  .box.b,
+  .box.c,
+  .box.d {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .a {
+    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat
+      center center;
+  }
+  .b {
+    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat
+      center center;
+  }
+  .c {
+    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center
+      center;
+  }
+  .d {
+    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center
+      center;
   }
 }
 /* Mobile size  */
