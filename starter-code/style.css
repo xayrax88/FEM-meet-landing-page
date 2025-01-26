@@ -63,6 +63,27 @@ body {
   margin: auto;
   padding: 0;
 }
+main {
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1em;
+  width: 100%;
+}
+section {
+  text-align: center;
+}
+
+section,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+svg {
+  height: 28px;
+  width: 118px;
+  margin: 0.5em;
+}
 footer {
   color: var(--White);
   position: relative;
@@ -79,60 +100,16 @@ footer {
 
 /* Responsive  Media queries */
 /* Desktop size */
-@media only screen and (min-width: 769px) and (max-width: 900) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 1em;
-    width: 100%;
-  }
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
   section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 768px;
-  }
-  svg {
-    display: inline-block;
-    height: 28px;
-    width: 118px;
-    margin: 2em;
-    padding: 0;
-    position: relative;
-    visibility: visible;
+    width: 1440px;
   }
 }
 
 /* Tablet size */
 @media only screen and (min-width: 391px) and (max-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 1em;
-    width: 100%;
-  }
   section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     width: 768px;
-  }
-  svg {
-    display: inline-block;
-    height: 28px;
-    width: 118px;
-    margin: 2em;
-    padding: 0;
-    position: relative;
-    visibility: visible;
   }
   /* Section P's & H2's */
   section.section-02 h2 {
@@ -222,9 +199,11 @@ footer {
     padding-top: 3rem;
   }
   .hero {
-    max-width: 768px;
+    height: 303px;
     width: 100%;
     margin: 0 auto;
+    background: url(/starter-code/assets/tablet/image-hero.png) no-repeat center
+      center;
   }
   /* Buttons */
   .btn-container {
@@ -345,26 +324,8 @@ footer {
 }
 /* Mobile size  */
 @media only screen and (max-width: 390px) {
-  main {
-    justify-content: center;
-    min-height: 100vh;
-    padding: 1em;
-    width: 100%;
-  }
   section {
-    text-align: center;
     width: 375px;
-  }
-  section,
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  svg {
-    height: 28px;
-    width: 118px;
-    margin: 0.5em;
   }
   h1,
   h2 {
@@ -436,9 +397,12 @@ footer {
     height: 100%;
   }
   .hero {
+    height: 160px;
     width: 375px;
-    margin: 25px 0px;
-    display: block;
+    margin: 0 auto;
+    background: url(/starter-code/assets/tablet/image-hero.png) no-repeat center
+      center;
+    background-size: cover;
   }
   /* buttons */
   .btn-container {
