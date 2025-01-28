@@ -100,20 +100,41 @@ footer {
     margin: 0 auto;
   }
   /* Section h1, h2 & p */
-  h1 {
+  h1,
+  section.section-01 h2 {
     color: var(--slate-900);
     font-size: var(--txt-size-64px);
     text-align: center;
     letter-spacing: -1px;
     word-spacing: 5px;
-    height: 106px;
+    height: 140px;
     width: 448.3px;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   section.section-00 p {
     width: 448.3px;
     height: 54px;
     /* margin-bottom: 5rem; */
+  }
+  section.section-01 p {
+    height: 54px;
+    width: 448.3px;
+  }
+  section.section-02 div.content p {
+    height: 48px;
+    width: 504px;
+  }
+  section.section-00 p,
+  section.section-01 p {
+    color: var(--slate-600);
+    font-size: var(--txt-size-16px);
+    line-height: 150%;
+    letter-spacing: 1px;
+  }
+  section.section-02 div.content h2,
+  section.section-02 div.content p {
+    color: var(--White);
+    margin: 2rem 0rem;
   }
   /* Hero */
   .desktop-hero.left,
@@ -128,14 +149,129 @@ footer {
     overflow: hidden;
   }
   .desktop-hero.left {
-    left: -5px;
+    left: 0px;
     background: url(/starter-code/assets/desktop/image-hero-left.png) no-repeat
       center;
   }
   .desktop-hero.right {
-    right: -5px;
+    right: 0px;
     background: url(/starter-code/assets/desktop/image-hero-right.png) no-repeat
       center;
+  }
+
+  /* Buttons */
+  .btn-container {
+    display: flex;
+    gap: 1rem;
+  }
+  .btn {
+    margin-right: 1rem;
+  }
+  .btn-2 {
+    background: var(--purple-600);
+    width: 161px;
+  }
+  .btn,
+  .btn-2 {
+    margin-bottom: 2rem;
+  }
+  .btn,
+  .btn-3 {
+    background: var(--cyan-600);
+    width: 193px;
+  }
+  .btn,
+  .btn-2,
+  .btn-3 {
+    height: 56px;
+    color: var(--White);
+    border-radius: 3rem;
+    border-style: none;
+    font-size: var(--txt-size-16px);
+    line-height: 150%;
+    font-weight: var(--fw-600);
+  }
+  /* Image grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 152px);
+    grid-template-rows: 160px;
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 7rem;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .box.a,
+  .box.b,
+  .box.c,
+  .box.d {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .a {
+    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat
+      center center;
+  }
+  .b {
+    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat
+      center center;
+  }
+  .c {
+    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center
+      center;
+  }
+  .d {
+    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center
+      center;
+  }
+  /* Line & Circle */
+  .verticalLine,
+  .verticalLine-2 {
+    border-left: solid 1px var(--slate-300);
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .verticalLine {
+    top: 5rem;
+    z-index: 2;
+  }
+  .verticalLine-2 {
+    top: -7rem;
+    z-index: 1;
+  }
+  .circle,
+  .circle-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: solid 1px var(--slate-300);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--White);
+  }
+  .circle {
+    top: 10rem;
+    z-index: 1;
+  }
+  .circle-2 {
+    top: -2rem;
+    z-index: 11;
+  }
+  .circle span,
+  .circle-2 span {
+    font-size: 1rem;
+    font-weight: var(--fw-600);
   }
 }
 
