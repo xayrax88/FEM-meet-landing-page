@@ -178,7 +178,8 @@ footer {
     align-items: center;
     position: relative;
     overflow: visible;
-    background: url(./assets/desktop/image-footer.jpg) no-repeat center center;
+    background: url(/starter-code/assets/desktop/image-footer.jpg) no-repeat
+      center center;
     background-size: 100% auto;
     margin: 0 auto;
     bottom: 0;
@@ -276,21 +277,22 @@ footer {
     background-size: cover;
     border-radius: 5px;
   }
+  /* url(/assets/desktop/image-woman-in-videocall.jpg) */
   .a {
-    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat
-      center center;
+    background: url(/starter-code/assets/desktop/image-woman-in-videocall.jpg)
+      no-repeat center center;
   }
   .b {
-    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat
-      center center;
+    background: url(/starter-code/assets/desktop/image-women-videochatting.jpg)
+      no-repeat center center;
   }
   .c {
-    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center
-      center;
+    background: url(/starter-code/assets/desktop/image-men-in-meeting.jpg)
+      no-repeat center center;
   }
   .d {
-    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center
-      center;
+    background: url(/starter-code/assets/desktop/image-man-texting.jpg)
+      no-repeat center center;
   }
   /* Line & Circle */
   .verticalLine,
@@ -396,7 +398,8 @@ footer {
     width: 768px;
     position: relative;
     overflow: visible;
-    background: url(./assets/tablet/image-footer.jpg) no-repeat center center;
+    background: url(/starter-code/assets/tablet/image-footer.jpg) no-repeat
+      center center;
   }
   .section-02 .background-overlay {
     position: absolute;
@@ -492,20 +495,20 @@ footer {
     border-radius: 5px;
   }
   .a {
-    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat
-      center center;
+    background: url(/starter-code/assets/desktop/image-woman-in-videocall.jpg)
+      no-repeat center center;
   }
   .b {
-    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat
-      center center;
+    background: url(/starter-code/assets/desktop/image-women-videochatting.jpg)
+      no-repeat center center;
   }
   .c {
-    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center
-      center;
+    background: url(/starter-code/assets/desktop/image-men-in-meeting.jpg)
+      no-repeat center center;
   }
   .d {
-    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center
-      center;
+    background: url(/starter-code/assets/desktop/image-man-texting.jpg)
+      no-repeat center center;
   }
 
   /* Line & Circle */
