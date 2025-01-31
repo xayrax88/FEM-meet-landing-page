@@ -93,7 +93,7 @@ footer {
 
 /* Responsive  Media queries */
 /* Mobile size  390px - 600px*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 390px) {
   section {
     width: 375px;
   }
@@ -290,7 +290,7 @@ footer {
   }
 }
 /* Tablet size 768px*/
-@media only screen and (min-width: 768px) /*and (max-width: 768px) */ {
+@media only screen and (min-width: 391px) and (max-width: 768px) {
   section {
     width: 768px;
   }
@@ -507,7 +507,7 @@ footer {
   }
 }
 /* Desktop size 992px, 1200px, 1440px*/
-@media only screen and (min-width: 992px) /*and (max-width: 1440px) */ {
+@media only screen and (min-width: 769px) /*and (max-width: 1440px) */ {
   section {
     width: 1440px;
     position: relative;
