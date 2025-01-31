@@ -612,7 +612,8 @@ footer {
     position: relative;
   }
   .section-02 .background-overlay {
-    background: url(./assets/mobile/image-footer.jpg) no-repeat center center;
+    background: url(/starter-code/assets/mobile/image-footer.jpg) no-repeat
+      center center;
     background-size: cover;
     z-index: 1;
   }
@@ -689,20 +690,20 @@ footer {
     border-radius: 5px;
   }
   .a {
-    background: url(./assets/desktop/image-woman-in-videocall.jpg) no-repeat
-      center center;
+    background: url(/starter-code/assets/desktop/image-woman-in-videocall.jpg)
+      no-repeat center center;
   }
   .b {
-    background: url(./assets/desktop/image-women-videochatting.jpg) no-repeat
-      center center;
+    background: url(/starter-code/assets/desktop/image-women-videochatting.jpg)
+      no-repeat center center;
   }
   .c {
-    background: url(./assets/desktop/image-men-in-meeting.jpg) no-repeat center
-      center;
+    background: url(/starter-code/assets/desktop/image-men-in-meeting.jpg)
+      no-repeat center center;
   }
   .d {
-    background: url(./assets/desktop/image-man-texting.jpg) no-repeat center
-      center;
+    background: url(/starter-code/assets/desktop/image-man-texting.jpg)
+      no-repeat center center;
   }
   /* Line & circle */
   .verticalLine {
