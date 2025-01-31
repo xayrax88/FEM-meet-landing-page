@@ -92,8 +92,422 @@ footer {
 }
 
 /* Responsive  Media queries */
-/* Desktop size */
-@media only screen and (min-width: 769px) and (max-width: 1440px) {
+/* Mobile size  390px - 600px*/
+@media only screen and (max-width: 600px) {
+  section {
+    width: 375px;
+  }
+  h1,
+  h2 {
+    color: var(--slate-900);
+    font-size: var(--txt-size-40px);
+    line-height: 110%;
+  }
+  section.section-02 div.content h2,
+  section.section-02 div.content p {
+    color: var(--White);
+  }
+  p {
+    color: var(--slate-600);
+    font-size: var(--txt-size-12px);
+    line-height: 110%;
+    letter-spacing: 1px;
+  }
+  section.section-02 div.content p {
+    margin: 2rem 0rem;
+  }
+  section button span {
+    color: var(--cyan-300);
+  }
+  .section-00 {
+    height: 715px;
+    margin-bottom: 3rem;
+  }
+  .section-01 {
+    height: 915px;
+    width: 375px;
+    position: relative;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
+  }
+  /* section-02 */
+  .section-02 {
+    height: 374px;
+    width: 375px;
+    overflow: visible;
+  }
+  .section-02 .content {
+    z-index: 3;
+    text-align: center;
+    color: var(--White);
+    padding: 1em;
+  }
+  .section-02,
+  .section-02 .content {
+    position: relative;
+  }
+  .section-02 .background-overlay {
+    background: url(/starter-code/assets/mobile/image-footer.jpg) no-repeat
+      center center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .section-02 .background-overlay::before {
+    content: "";
+    background-color: var(--purple-300);
+    opacity: 0.4;
+    z-index: 2;
+  }
+  .section-02 .background-overlay,
+  .section-02 .background-overlay::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .mobile-hero {
+    height: 160px;
+    width: 375px;
+    margin: 0 auto;
+    background: url(/starter-code/assets/tablet/image-hero.png) no-repeat center
+      center;
+    background-size: cover;
+  }
+  /* buttons */
+  .btn-container {
+    display: contents;
+  }
+  .btn-2 {
+    width: 161px;
+    margin-bottom: 5rem;
+  }
+  .btn,
+  .btn-3 {
+    width: 193px;
+    margin-bottom: 2rem;
+    background: var(--cyan-600);
+  }
+  .btn-2 {
+    background: var(--purple-600);
+  }
+  .btn,
+  .btn-2,
+  .btn-3 {
+    height: 56px;
+    border-radius: 3rem;
+    color: var(--White);
+    border-style: none;
+    font-size: var(--txt-size-16px);
+    line-height: 150%;
+    font-weight: var(--fw-600);
+  }
+  /* Image Grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: 147.5px 147.5px;
+    grid-template-rows: 144px 144px;
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 10rem;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .box.a,
+  .box.b,
+  .box.c,
+  .box.d {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .a {
+    background: url(/starter-code/assets/desktop/image-woman-in-videocall.jpg)
+      no-repeat center center;
+  }
+  .b {
+    background: url(/starter-code/assets/desktop/image-women-videochatting.jpg)
+      no-repeat center center;
+  }
+  .c {
+    background: url(/starter-code/assets/desktop/image-men-in-meeting.jpg)
+      no-repeat center center;
+  }
+  .d {
+    background: url(/starter-code/assets/desktop/image-man-texting.jpg)
+      no-repeat center center;
+  }
+  /* Line & circle */
+  .verticalLine {
+    top: -3rem;
+    z-index: 2;
+  }
+  .verticalLine,
+  .verticalLine-2 {
+    border-left: solid 1px var(--slate-300);
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .verticalLine-2 {
+    top: -7rem;
+  }
+  .verticalLine-2,
+  .circle {
+    z-index: 1;
+  }
+  .circle,
+  .circle-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: solid 1px var(--slate-300);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: 20px auto; */
+    background: var(--White);
+  }
+  .circle {
+    top: 2rem;
+  }
+  .circle-2 {
+    top: -2rem;
+    z-index: 11;
+  }
+  .circle span,
+  .circle-2 span {
+    font-size: 1rem;
+    font-weight: var(--fw-600);
+  }
+}
+/* Tablet size 768px*/
+@media only screen and (min-width: 768px) /*and (max-width: 768px) */ {
+  section {
+    width: 768px;
+  }
+  /* Section P's & H2's */
+  section.section-02 h2 {
+    font-size: var(--txt-size-48px);
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+  }
+  h1,
+  section.section-01 h2 {
+    color: var(--slate-900);
+    font-size: var(--txt-size-48px);
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    height: 106px;
+    width: 448.3px;
+  }
+  section.section-00 p {
+    width: 448.3px;
+    height: 48px;
+  }
+  section.section-01 p {
+    height: 72px;
+    width: 504px;
+  }
+  section.section-02 div.content p {
+    height: 48px;
+    width: 504px;
+  }
+  section.section-00 p,
+  section.section-01 p {
+    color: var(--slate-600);
+    font-size: var(--txt-size-16px);
+    line-height: 150%;
+    letter-spacing: 1px;
+  }
+  section.section-02 div.content h2,
+  section.section-02 div.content p {
+    color: var(--White);
+    margin: 2rem 0rem;
+  }
+  /* Sections*/
+  .section-00,
+  .section-01 {
+    gap: 1rem;
+    margin-bottom: 10rem;
+  }
+  .section-02 {
+    height: 428px;
+    width: 768px;
+    position: relative;
+    overflow: visible;
+    background: url(/starter-code/assets/tablet/image-footer.jpg) no-repeat
+      center center;
+  }
+  .section-02 .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+  }
+  .section-02 .background-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-300);
+    opacity: 0.4;
+    z-index: 2;
+  }
+  .section-02 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: var(--White);
+    padding: 1em;
+    padding-top: 3rem;
+  }
+  .tablet-hero {
+    height: 303px;
+    width: 100%;
+    margin: 0 auto;
+    background: url(/starter-code/assets/tablet/image-hero.png) no-repeat center
+      center;
+  }
+  /* Buttons */
+  .btn-container {
+    display: flex;
+    gap: 1rem;
+  }
+  .btn {
+    margin-right: 1rem;
+  }
+  .btn-2 {
+    background: var(--purple-600);
+    width: 161px;
+  }
+  .btn,
+  .btn-2 {
+    margin-bottom: 2rem;
+  }
+  .btn,
+  .btn-3 {
+    background: var(--cyan-600);
+    width: 193px;
+  }
+  .btn,
+  .btn-2,
+  .btn-3 {
+    height: 56px;
+    color: var(--White);
+    border-radius: 3rem;
+    border-style: none;
+    font-size: var(--txt-size-16px);
+    line-height: 150%;
+    font-weight: var(--fw-600);
+  }
+
+  /* Image grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 152px);
+    grid-template-rows: 160px;
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 7rem;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .box.a,
+  .box.b,
+  .box.c,
+  .box.d {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .a {
+    background: url(/starter-code/assets/desktop/image-woman-in-videocall.jpg)
+      no-repeat center center;
+  }
+  .b {
+    background: url(/starter-code/assets/desktop/image-women-videochatting.jpg)
+      no-repeat center center;
+  }
+  .c {
+    background: url(/starter-code/assets/desktop/image-men-in-meeting.jpg)
+      no-repeat center center;
+  }
+  .d {
+    background: url(/starter-code/assets/desktop/image-man-texting.jpg)
+      no-repeat center center;
+  }
+
+  /* Line & Circle */
+  .verticalLine,
+  .verticalLine-2 {
+    border-left: solid 1px var(--slate-300);
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .verticalLine {
+    top: 55rem;
+    z-index: 2;
+  }
+  .verticalLine-2 {
+    top: -7rem;
+    z-index: 1;
+  }
+  .circle,
+  .circle-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: solid 1px var(--slate-300);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--White);
+  }
+  .circle {
+    top: 60rem;
+    z-index: 1;
+  }
+  .circle-2 {
+    top: -2rem;
+    z-index: 11;
+  }
+  .circle span,
+  .circle-2 span {
+    font-size: 1rem;
+    font-weight: var(--fw-600);
+  }
+}
+/* Desktop size 992px, 1200px, 1440px*/
+@media only screen and (min-width: 992px) /*and (max-width: 1440px) */ {
   section {
     width: 1440px;
     position: relative;
@@ -328,420 +742,6 @@ footer {
   .circle {
     top: 10rem;
     z-index: 1;
-  }
-  .circle-2 {
-    top: -2rem;
-    z-index: 11;
-  }
-  .circle span,
-  .circle-2 span {
-    font-size: 1rem;
-    font-weight: var(--fw-600);
-  }
-}
-/* Tablet size */
-@media only screen and (min-width: 391px) and (max-width: 768px) {
-  section {
-    width: 768px;
-  }
-  /* Section P's & H2's */
-  section.section-02 h2 {
-    font-size: var(--txt-size-48px);
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -1px;
-    word-spacing: 5px;
-  }
-  h1,
-  section.section-01 h2 {
-    color: var(--slate-900);
-    font-size: var(--txt-size-48px);
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -1px;
-    word-spacing: 5px;
-    height: 106px;
-    width: 448.3px;
-  }
-  section.section-00 p {
-    width: 448.3px;
-    height: 48px;
-  }
-  section.section-01 p {
-    height: 72px;
-    width: 504px;
-  }
-  section.section-02 div.content p {
-    height: 48px;
-    width: 504px;
-  }
-  section.section-00 p,
-  section.section-01 p {
-    color: var(--slate-600);
-    font-size: var(--txt-size-16px);
-    line-height: 150%;
-    letter-spacing: 1px;
-  }
-  section.section-02 div.content h2,
-  section.section-02 div.content p {
-    color: var(--White);
-    margin: 2rem 0rem;
-  }
-  /* Sections*/
-  .section-00,
-  .section-01 {
-    gap: 1rem;
-    margin-bottom: 10rem;
-  }
-  .section-02 {
-    height: 428px;
-    width: 768px;
-    position: relative;
-    overflow: visible;
-    background: url(/starter-code/assets/tablet/image-footer.jpg) no-repeat
-      center center;
-  }
-  .section-02 .background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: 1;
-  }
-  .section-02 .background-overlay::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--purple-300);
-    opacity: 0.4;
-    z-index: 2;
-  }
-  .section-02 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    color: var(--White);
-    padding: 1em;
-    padding-top: 3rem;
-  }
-  .tablet-hero {
-    height: 303px;
-    width: 100%;
-    margin: 0 auto;
-    background: url(/starter-code/assets/tablet/image-hero.png) no-repeat center
-      center;
-  }
-  /* Buttons */
-  .btn-container {
-    display: flex;
-    gap: 1rem;
-  }
-  .btn {
-    margin-right: 1rem;
-  }
-  .btn-2 {
-    background: var(--purple-600);
-    width: 161px;
-  }
-  .btn,
-  .btn-2 {
-    margin-bottom: 2rem;
-  }
-  .btn,
-  .btn-3 {
-    background: var(--cyan-600);
-    width: 193px;
-  }
-  .btn,
-  .btn-2,
-  .btn-3 {
-    height: 56px;
-    color: var(--White);
-    border-radius: 3rem;
-    border-style: none;
-    font-size: var(--txt-size-16px);
-    line-height: 150%;
-    font-weight: var(--fw-600);
-  }
-
-  /* Image grid */
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 152px);
-    grid-template-rows: 160px;
-    grid-gap: 20px;
-    justify-content: center;
-    margin-top: 7rem;
-    z-index: 0;
-    position: relative;
-    margin-bottom: 5rem;
-  }
-  .box.a,
-  .box.b,
-  .box.c,
-  .box.d {
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    border-radius: 5px;
-  }
-  .a {
-    background: url(/starter-code/assets/desktop/image-woman-in-videocall.jpg)
-      no-repeat center center;
-  }
-  .b {
-    background: url(/starter-code/assets/desktop/image-women-videochatting.jpg)
-      no-repeat center center;
-  }
-  .c {
-    background: url(/starter-code/assets/desktop/image-men-in-meeting.jpg)
-      no-repeat center center;
-  }
-  .d {
-    background: url(/starter-code/assets/desktop/image-man-texting.jpg)
-      no-repeat center center;
-  }
-
-  /* Line & Circle */
-  .verticalLine,
-  .verticalLine-2 {
-    border-left: solid 1px var(--slate-300);
-    height: 80px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .verticalLine {
-    top: 55rem;
-    z-index: 2;
-  }
-  .verticalLine-2 {
-    top: -7rem;
-    z-index: 1;
-  }
-  .circle,
-  .circle-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    border: solid 1px var(--slate-300);
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--White);
-  }
-  .circle {
-    top: 60rem;
-    z-index: 1;
-  }
-  .circle-2 {
-    top: -2rem;
-    z-index: 11;
-  }
-  .circle span,
-  .circle-2 span {
-    font-size: 1rem;
-    font-weight: var(--fw-600);
-  }
-}
-/* Mobile size  */
-@media only screen and (max-width: 390px) {
-  section {
-    width: 375px;
-  }
-  h1,
-  h2 {
-    color: var(--slate-900);
-    font-size: var(--txt-size-40px);
-    line-height: 110%;
-  }
-  section.section-02 div.content h2,
-  section.section-02 div.content p {
-    color: var(--White);
-  }
-  p {
-    color: var(--slate-600);
-    font-size: var(--txt-size-12px);
-    line-height: 110%;
-    letter-spacing: 1px;
-  }
-  section.section-02 div.content p {
-    margin: 2rem 0rem;
-  }
-  section button span {
-    color: var(--cyan-300);
-  }
-  .section-00 {
-    height: 715px;
-    margin-bottom: 3rem;
-  }
-  .section-01 {
-    height: 915px;
-    width: 375px;
-    position: relative;
-    padding: 1rem;
-    padding-bottom: 2rem;
-    margin-bottom: 6rem;
-  }
-  /* section-02 */
-  .section-02 {
-    height: 374px;
-    width: 375px;
-    overflow: visible;
-  }
-  .section-02 .content {
-    z-index: 3;
-    text-align: center;
-    color: var(--White);
-    padding: 1em;
-  }
-  .section-02,
-  .section-02 .content {
-    position: relative;
-  }
-  .section-02 .background-overlay {
-    background: url(/starter-code/assets/mobile/image-footer.jpg) no-repeat
-      center center;
-    background-size: cover;
-    z-index: 1;
-  }
-  .section-02 .background-overlay::before {
-    content: "";
-    background-color: var(--purple-300);
-    opacity: 0.4;
-    z-index: 2;
-  }
-  .section-02 .background-overlay,
-  .section-02 .background-overlay::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .mobile-hero {
-    height: 160px;
-    width: 375px;
-    margin: 0 auto;
-    background: url(/starter-code/assets/tablet/image-hero.png) no-repeat center
-      center;
-    background-size: cover;
-  }
-  /* buttons */
-  .btn-container {
-    display: contents;
-  }
-  .btn-2 {
-    width: 161px;
-    margin-bottom: 5rem;
-  }
-  .btn,
-  .btn-3 {
-    width: 193px;
-    margin-bottom: 2rem;
-    background: var(--cyan-600);
-  }
-  .btn-2 {
-    background: var(--purple-600);
-  }
-  .btn,
-  .btn-2,
-  .btn-3 {
-    height: 56px;
-    border-radius: 3rem;
-    color: var(--White);
-    border-style: none;
-    font-size: var(--txt-size-16px);
-    line-height: 150%;
-    font-weight: var(--fw-600);
-  }
-  /* Image Grid */
-  .image-grid {
-    display: grid;
-    grid-template-columns: 147.5px 147.5px;
-    grid-template-rows: 144px 144px;
-    grid-gap: 10px;
-    justify-content: center;
-    margin-top: 10rem;
-    z-index: 0;
-    position: relative;
-    margin-bottom: 5rem;
-  }
-  .box.a,
-  .box.b,
-  .box.c,
-  .box.d {
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    border-radius: 5px;
-  }
-  .a {
-    background: url(/starter-code/assets/desktop/image-woman-in-videocall.jpg)
-      no-repeat center center;
-  }
-  .b {
-    background: url(/starter-code/assets/desktop/image-women-videochatting.jpg)
-      no-repeat center center;
-  }
-  .c {
-    background: url(/starter-code/assets/desktop/image-men-in-meeting.jpg)
-      no-repeat center center;
-  }
-  .d {
-    background: url(/starter-code/assets/desktop/image-man-texting.jpg)
-      no-repeat center center;
-  }
-  /* Line & circle */
-  .verticalLine {
-    top: -3rem;
-    z-index: 2;
-  }
-  .verticalLine,
-  .verticalLine-2 {
-    border-left: solid 1px var(--slate-300);
-    height: 80px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .verticalLine-2 {
-    top: -7rem;
-  }
-  .verticalLine-2,
-  .circle {
-    z-index: 1;
-  }
-  .circle,
-  .circle-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    border: solid 1px var(--slate-300);
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    /* margin: 20px auto; */
-    background: var(--White);
-  }
-  .circle {
-    top: 2rem;
   }
   .circle-2 {
     top: -2rem;
